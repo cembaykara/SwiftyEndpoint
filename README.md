@@ -14,8 +14,8 @@ SwiftyEndpoint is a lightweight, protocol-oriented Swift package that helps you 
 Add SwiftyEndpoint to your `Package.swift`:
 
 ```swift
-dependencies: [
-.package(url: "https://github.com/cembaykara/SwiftyEndpoint.git", from: "1.0.0")
+dependencies: [ 
+	.package(url: "https://github.com/cembaykara/SwiftyEndpoint.git", from: "1.0.0")
 ]
 ```
 
@@ -53,7 +53,7 @@ enum MoviesEndpoint: SwiftyEndpoint {
 	
 	static let configuration: NetworkConfiguration = NetworkConfiguration()
 	
-	static var basePath: String { "/api/v2" }
+	static var basePath: String { "/api/v2/movies" }
 	
 	var path: String {
 		switch self {
@@ -87,12 +87,12 @@ enum MovieOptions: SwiftyOptions {
 ```swift 
 // Basic usage
 let popularMoviesURL = MovieEndpoint.mostPopular.url()
-// Result: https://api.example.com/api/v2/most_popular
+// Result: https://api.example.com/api/v2/movies/most_popular
 
 // With query parameters
 let options: [MovieOptions] = [.page(1), .language("en-US") ]
 let urlWithParams = MovieEndpoint.popular.url(with: options)
-// Result: https://api.example.com/api/v1/movies/most_popular?page=1&language=en-US
+// Result: https://api.example.com/api/v2/movies/most_popular?page=1&language=en-US
 ```
 
 ### Base URL Generation
@@ -100,7 +100,7 @@ Generate base URLs without endpoint-specific paths:
 
 ```swift
 let baseURL = MovieEndpoint.baseURL()
-// Result: https://api.example.com/api/v1
+// Result: https://api.example.com/api/v2/movies
 ```
 
 ## Advanced Usage
@@ -112,7 +112,7 @@ You can customize URL construction using the `url(with:custom:)` method:
 ```swift
 let customURL = endpoint.url(with: options) { components, path in 
     var modified = components
-    modified.path = path + "/custom"
+    modified.path = "/custom" + path
 
     return modified
 }
