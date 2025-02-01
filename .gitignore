@@ -1,0 +1,108 @@
+# macOS System Files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# User settings
+*.xcuserdata/
+*.xcuserstate
+
+# Build products
+build/
+*.app
+*.app.dSYM
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Obj-C/Swift specific
+*.hmap
+*.swiftmodule
+*.swiftdoc
+*.swiftsourceinfo
+
+# Xcode Intermediate Build Files
+*.xcarchive
+*.bcsymbolmap
+
+# Xcode project files
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/xcshareddata/**/*
+*.xcworkspace/*
+!*.xcworkspace/contents.xcworkspacedata
+!*.xcworkspace/xcshareddata/
+!*.xcworkspace/xcshareddata/**/*
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/Build/
+Carthage/Checkouts/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Derived data
+DerivedData/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.lock
+
+# Archives and Symbols
+*.xcarchive
+
+# Logs
+*.log
+*.xcactivitylog
+
+# IDE configurations
+.idea/
+
+# XCTest logs and results
+*.xctestresult
+
+# Playground generated files
+timeline.xctimeline
+playground.xcworkspace
+
+# Metadata files
+*.metadata/
+*.orig
+
+# Simulator generated files
+*.sim*
+
+# CoreData
+*.xccurrentversion
+*.momh
+*.momt
+*.mom
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.xcdatamodeld/
+
+# Shared workspace schemes
+*.xcscheme
+
+# Git-specific
+*.rej
+*.orig
+*.diff
+
+# Temporary directories
+tmp/
