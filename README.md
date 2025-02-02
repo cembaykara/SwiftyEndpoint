@@ -4,6 +4,8 @@
 
 SwiftyEndpoint is a lightweight, protocol-oriented Swift package that helps you build type-safe API endpoints with ease. It provides a clean and flexible way to define your API endpoints, handle configurations, and manage query parameters.
 
+<a href='https://ko-fi.com/F1F719XC8H' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi6.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+
 ## 🔧 Installation
 
 ##### Swift Package Manager
@@ -20,7 +22,6 @@ dependencies: [
 	.package(url: "https://github.com/cembaykara/SwiftyEndpoint.git", from: "1.0.0")
 ]
 ```
-
 
 ## 🚀 Usage
 
@@ -121,10 +122,11 @@ let customURL = endpoint.url(with: options) { components, path in
 ```
 
 ## 🤝 Contributing
+
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## ⚖️ License  
 
-SwiftyEndpoint is released under the **[GNU General Public License v3.0 (GPL-3.0)](LICENSE.md)**.  
+SwiftyEndpoint is released under the **[Apache License 2.0](LICENSE.md)**.  
 
-This means you are free to **use, modify, and distribute** the software, but any derivative work must also be open-source and licensed under GPL-3.0. See the **[LICENSE](LICENSE.md)** file for full details.
+See the **[LICENSE](LICENSE.md)** file for full details.
