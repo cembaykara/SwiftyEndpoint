@@ -1,8 +1,10 @@
-# SwiftyEndpoint
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fcembaykara%2FSwiftyEndpoint%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/cembaykara/SwiftyEndpoint) [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fcembaykara%2FSwiftyEndpoint%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/cembaykara/SwiftyEndpoint)
+
+# 📦 SwiftyEndpoint
 
 SwiftyEndpoint is a lightweight, protocol-oriented Swift package that helps you build type-safe API endpoints with ease. It provides a clean and flexible way to define your API endpoints, handle configurations, and manage query parameters.
 
-## Installation
+## 🔧 Installation
 
 ##### Swift Package Manager
  You can install the SwiftyEndpoint via Swift Package Manager.
@@ -20,7 +22,7 @@ dependencies: [
 ```
 
 
-## Usage
+## 🚀 Usage
 
 #### 1. Define Your Configuration
 
@@ -103,7 +105,7 @@ let baseURL = MovieEndpoint.baseURL()
 // Result: https://api.example.com/api/v2/movies
 ```
 
-## Advanced Usage
+## 🔬 Advanced Usage
 
 ### Custom URL Construction
 
@@ -118,6 +120,11 @@ let customURL = endpoint.url(with: options) { components, path in
 }
 ```
 
-## Contributing
+## 🤝 Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 
+## ⚖️ License  
+
+SwiftyEndpoint is released under the **[GNU General Public License v3.0 (GPL-3.0)](LICENSE.md)**.  
+
+This means you are free to **use, modify, and distribute** the software, but any derivative work must also be open-source and licensed under GPL-3.0. See the **[LICENSE](LICENSE.md)** file for full details.
